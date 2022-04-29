@@ -1,6 +1,7 @@
 <h2 [hidden]="username!== ''">فرم ثبت نام : </h2>
 
-<h3 *ngIf="ismach && welcome ; else nologin"  [ngStyle]="{'color': changecolor()}">{{username}} ثبت نام با موفقیت انجام شد </h3>
+<h3 *ngIf="ismach && welcome ; else nologin"  [ngStyle]="{'color': changecolor()}"  > ثبت نام {{username}} با موفقیت انجام شد </h3>
+
 <ng-template #nologin>
     <p>جهت ورود ثبت نام کنید</p>
 </ng-template>
@@ -26,4 +27,4 @@
 <button type="button" [disabled]="!allowbtn" (click)="changeWelcome($event)"> ثبت نام </button>
 
 <br>
-<!-- <h3 [hidden]="username== ''">{{username}}  با موفقیت ثبت نام شدید. خوش آمدی</h3> -->
+<p *ngFor="let s of userlist; let i=index">یوزر {{i}} اضافه شد</p>

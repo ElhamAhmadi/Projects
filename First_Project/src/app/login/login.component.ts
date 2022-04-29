@@ -13,13 +13,16 @@ export class LoginComponent {
   colorr: string = 'black';
   allowbtn: boolean = false;
   welcome: boolean = false;
+  userlist: string[] = [];
   
  
   public changeUserName(e: Event) {
         this.username = (<HTMLInputElement>e.target).value;
+        
   }
   public changeWelcome(e: Event) {
     this.welcome= true;
+    this.userlist.push(this.username);
     
   }
   public changecolor() {
