@@ -1,16 +1,15 @@
-<h1 [hidden]="username== ''">Welcome {{username}}</h1>
-<h1 [hidden]="username!== ''">Please Enter your User Name</h1>
-<hr>
-<label>Name:</label> 
-<input type="text" (input)="changeUserName($event)">
-<br><br> 
-<!--<label>User Name:</label>
-    <input type="text" [(ngModel)]="name"><br><br>-->
-<label>password:</label>
-<input type="password" (input)="changePassword($event)">
-<br><br>
-<label>Re password:</label>
-<input type="password" (input)="changeRepassword($event)" >
-<br><br>
-<label [hidden]="ismach || pass==''">password does not match</label>
-<label [hidden]="!ismach">password match</label>
+<body dir="rtl" >
+    <div class="mydiv">
+        <div class="mydiv darkgreen">
+             <label >هدر برنامه اینجاست</label>
+        </div>
+        <div class=" mydiv lightgreen">
+            <app-menu></app-menu>
+        </div>
+        <div class="container">
+            <div class="col mydiv darkgray" ><app-login></app-login> </div>
+            <div class="col mydiv lightgray"><app-content></app-content>  </div>
+        </div>
+    </div>
+</body>
+

@@ -1,0 +1,19 @@
+.btn {
+    border-color: black;
+    padding: 10px;
+    font-size: large;
+
+}
+
+.align {
+
+    float: right;
+    width: 150px;
+    padding: 5px;
+
+}
+
+.validationcolor{
+
+    color: red;
+}

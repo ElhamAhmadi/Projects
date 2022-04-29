@@ -1,0 +1,37 @@
+body {
+   font-family: "iranyekanBakh";
+
+}
+
+.mydiv {
+   padding: 10px;
+   font-family: tahoma;
+   font-size: 14px;
+   margin: 10px 0;
+}
+
+.darkgreen {
+   background-color: darkgreen;
+}
+
+.lightgray {
+   background-color: lightgray;
+}
+
+.darkgray {
+   background-color: darkgray;
+}
+
+.lightgreen {
+   background-color: lightgreen;
+}
+
+.col {
+   width: 50%;
+   height: 100%;
+}
+
+.container {
+   display: flex;
+   width: 100%;
+}
