@@ -3,6 +3,32 @@
     <div class="col-md-10">
         <app-shoping-edit></app-shoping-edit>
         <hr>
+        <div class="row">
+            <div class="col-xl-12">
+                <form>
+                    <div class="row"> 
+                        <div class="col-sm-5 form-group">
+                         <label  for="name" >نام ماده</label> 
+                         <input type="text" id="name" class="form-control">
+                        </div>
+                        <div class="col-sm-2 form-group">
+                            <label  for="name" >مقدار</label> 
+                            <input type="text" id="name" class="form-control">
+                           </div>
+                    </div>
+                    <div class="row"> 
+                        <div class="col-sm-5 form-group">
+                        <button class="btn btn-success" type="button">افزودن</button>
+                        <button class="btn btn-danger" type="button">حذف</button>
+                        <button class="btn btn-primary" type="button">بازنویسی</button>
+                        </div>
+                    </div>
+                </form>
+
+
+            </div>
+
+        </div>
         <ul class="list-group" >
             <a  class="list-group-item" style="cursor: pointer;" *ngFor="let ingredent of ingredients">
                 {{ingredent.name}} ({{ingredent.amount}})
