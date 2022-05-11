@@ -1,7 +1,13 @@
+<body>
 <div class="row">
-    <div class="col-xs-10">
+    <div class="col-md-10">
         <app-shoping-edit></app-shoping-edit>
         <hr>
-        <p>لیست خرید</p>
+        <ul class="list-group" >
+            <a  class="list-group-item" style="cursor: pointer;" *ngFor="let ingredent of ingredients">
+                {{ingredent.name}} ({{ingredent.amount}})
+            </a>
+        </ul>
     </div>
 </div>
+</body>

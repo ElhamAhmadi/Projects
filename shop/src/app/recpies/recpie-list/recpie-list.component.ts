@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Recipe } from '../recipe.model';
+import { Recipe } from 'src/app/shared/models/recipe.model';
+
 
 @Component({
   selector: 'app-recpie-list',
@@ -8,9 +9,16 @@ import { Recipe } from '../recipe.model';
 })
 export class RecpieListComponent implements OnInit {
   recpies: Recipe[]= [
-new Recipe('دستور پخت قیمه', 'شرح دستور اینجا می باشد', 'https://img.nody.ir/%D8%B9%DA%A9%D8%B3-%D8%AE%D9%88%D8%B1%D8%B4-%D9%84%D9%BE%D9%87/')
+new Recipe('دستور پخت ماکارانی', 'شرح دستور اینجا می باشد',
+ 'https://parsmakaran.com/wp-content/uploads/2020/10/007bcb9693f9c4221fb79b00914c4ef9.jpg'),
+ new Recipe('دستور پخت ماکارانی', 'شرح دستور اینجا می باشد',
+ 'https://parsmakaran.com/wp-content/uploads/2020/10/007bcb9693f9c4221fb79b00914c4ef9.jpg'),
+ new Recipe('دستور پخت ماکارانی', 'شرح دستور اینجا می باشد',
+ 'https://parsmakaran.com/wp-content/uploads/2020/10/007bcb9693f9c4221fb79b00914c4ef9.jpg')
 
-  ];
+
+
+  ]
 
   constructor() { }
 
