@@ -1,0 +1,47 @@
+ <body>
+
+    <div class="container">
+        <div class="row">
+            <h3 class="text-center mt-10"> </h3>
+            <div class="col-xs-12 mt-10">
+                <p> یک غذای ایرانی تعریف کنید</p>
+                <label> نام غذا</label>
+                <input type="text" class="form-control" >
+                <label> محتوای غذا</label>
+                <input type="text" class="form-control" >
+                <br>
+                <button class=" btn btn-warning" (click)="onAddIrani($event)">افزودن غذای ایرانی</button>
+                <button class=" btn btn-warning" (click)="onAddGermany($event)">افزودن غذای خارجی</button>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="pannel pannel-defaut" *ngFor="let element of serverElements">
+                    <div class="pannel-heading">{{element.namee}}</div>
+                    <div class="pannel-body">
+                        <p>
+                            <strong *ngIf="element.type == 'iran'" style="color: red;">{{element.content}} </strong>
+                            <em *ngIf="element.type == 'germany'" style="color: red;">{{element.content}} </em>
+    
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+ 
+
+  <!--  <app-menu></app-menu>
+    <hr>
+    <div class="row">
+        <div class="col-md-5">
+        <app-add-item></app-add-item>
+        </div>
+        <div class="col-md-7">
+           <app-show-content></app-show-content>
+        </div>
+    
+    </div>
+ -->
+
